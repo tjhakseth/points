@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+      <title>Point Up</title>
+  </head>
+  <body>
+    <div>
+
+        <h1>Point Up</h1>
+            <div class="panel panel-default">
+            <div class="panel-heading">Leaderboard</div>
+            <table class="table">
+                {% for key, value in totals %}
+                    <div>{{ key }}:
+                        {{ value }}</div>
+                {% endfor %}
+            </table>
+            </div>
+
+    </div>
+  </body>
+</html>
